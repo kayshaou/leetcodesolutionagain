@@ -8,7 +8,7 @@ var firstRecurrentCharacters = (charArray) => {
       return num;
     }
   }
-  return -1;
+  return undefined;
 };
 
 console.log(firstRecurrentCharacters([2, 5, 1, 2, 3, 5, 1, 2, 4]));
