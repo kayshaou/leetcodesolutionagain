@@ -1,7 +1,7 @@
 # My Coding Solution
 
 Learn from Zero to Mastery course on Udemy
-Yay! Contains of the following solutions. Might not be the best efficient.
+Yay! Contains of the following solutions. Might not be the most efficient.
 
 ### first Recurrent Characters
 
