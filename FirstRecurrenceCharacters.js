@@ -12,3 +12,5 @@ var firstRecurrentCharacters = (charArray) => {
 };
 
 console.log(firstRecurrentCharacters([2, 5, 1, 2, 3, 5, 1, 2, 4]));
+
+console.log(firstRecurrentCharacters([1, 1]));
