@@ -114,6 +114,25 @@ class LinkedList {
     this.length--;
     return this;
   }
+
+  reverse() {
+    // if theres only one element in the linklist just return
+    if (!this.head.next) {
+      return this.head;
+    }
+    let first = this.head;
+    this.tail = this.head;
+    let second = first.next;
+    while (second) {
+      const tmp = second.next;
+      second.next = first;
+      first = second;
+      second = tmp;
+    }
+    this.head.next = null;
+    this.head = first;
+    return this.printList();
+  }
 }
 const linkedList = new LinkedList(10);
 linkedList.append(5);
@@ -123,9 +142,5 @@ linkedList.prepend(12);
 linkedList.insert(8, 9);
 linkedList.insert(3, 2);
 console.log(linkedList.printList());
-linkedList.remove(1);
-console.log(linkedList.printList());
-linkedList.remove(2);
-console.log(linkedList.printList());
-linkedList.remove(4);
-console.log(linkedList.printList());
+//[12, 1, 10, 2, 5, 16, 9]
+console.log(linkedList.reverse());
